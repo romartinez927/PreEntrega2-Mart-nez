@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*navbar*/
+.nav-container {
+    position: sticky;
+    z-index: 3;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: whitesmoke
+}
+
+.navbar-logo {
+    justify-self: start;
+    font-size: 35px;
+    margin-left: 30px;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
+    cursor: pointer;
+}
+
+.ver-carrito {
+    font-size: 30px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
+}
+
+/*Banner styles*/
+.banner {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./../img/Banner\ web\ horizontal\ SALE\ indumentaria\ con\ fotografía\ llamativo\ amarillo\ y\ negro.png)
+}
+
+.banner-container {
+    text-align: center;
+    padding: 15% 0;
+}
+
+.banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 30px;
+    color: white;
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px black
+}
+
+/*product cards*/
+.shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 1em;
+}
+
+.card img {
+    width: 100%;
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+    padding: 0.3em;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    transition: all ease 0.5s;
+}
+
+.card button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.card button:active {
+    color: grey
+}
+
+/*carrito content*/
+.carrito-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.carrito-container::-webkit-scrollbar {
+    display: none;
+}
+
+.carrito-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.carrito-header-title {
+    padding: 1em;
+}
+
+.carrito-header-button {
+    cursor: pointer;
+    padding: 1em;
+    font-size: 2em;
+}
+
+.carrito-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.carrito-container img {
+    max-height: 150px;
+
+}
+
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/*delete button product*/
+.delete-product {
+    cursor: pointer;
+}
+
+/*CarritoCounter*/
+.cantidad-carrito {
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    padding: 4px;
+    top: 37px;
+    right: 14px;
+    position: absolute;
+    display: none;
+}
